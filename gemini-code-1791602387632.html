@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Del Alma Hasta La Piel</title>
+    <style>
+        body {
+            background-color: #0f0f11;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .tarjeta {
+            background-color: #1c1c1e;
+            border-radius: 16px;
+            padding: 24px;
+            width: 320px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        .portada {
+            background-color: #2c2c2e;
+            height: 240px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+        .portada h1 {
+            color: #ff3b7c;
+            font-size: 24px;
+            margin: 0;
+            text-shadow: 0 0 15px rgba(255, 59, 124, 0.4);
+            font-weight: bold;
+        }
+        .portada img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h2 {
+            font-size: 16px;
+            margin: 0 0 8px 0;
+            letter-spacing: 0.5px;
+        }
+        p.subtitulo {
+            font-size: 13px;
+            color: #a1a1aa;
+            margin: 0 0 20px 0;
+        }
+        audio {
+            width: 100%;
+            margin-bottom: 20px;
+            height: 36px;
+        }
+        .botones {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            flex: 1;
+            padding: 10px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+        .btn-admin {
+            background-color: #ff2d6d;
+        }
+        .btn-soporte {
+            background-color: transparent;
+            border: 1px solid #4a4a4c;
+        }
+        .pie-pagina {
+            font-size: 9px;
+            color: #666668;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tarjeta">
+        <div class="portada">
+            <!-- Si querés usar la imagen que vi en tu carpeta, borrá el <h1> y usá esta línea: -->
+            <!-- <img src="PORTADA CD.png" alt="Portada Del Alma Hasta La Piel"> -->
+            <h1>PORTADA AQUI</h1>
+        </div>
+        
+        <h2>DEL ALMA HASTA LA PIEL</h2>
+        <p class="subtitulo">Escucha el nuevo proyecto musical de Laura.</p>
+        
+        <audio controls>
+            <!-- Asegurate de que este nombre sea exactamente igual al archivo de audio que arrastres a GitHub -->
+            <source src="tu-archivo-de-audio.mp3" type="audio/mpeg">
+        </audio>
+        
+        <div class="botones">
+            <!-- Enlace actualizado para que busque el admin de este nuevo proyecto -->
+            <a href="admin" class="btn btn-admin">
+                <span>🔒</span> Admin
+            </a>
+            
+            <a href="#" class="btn btn-soporte">
+                <span>💬</span> Soporte
+            </a>
+        </div>
+        
+        <div class="pie-pagina">
+            Proyecto Laura 2026 - DEL ALMA HASTA LA PIEL
+        </div>
+    </div>
+
+</body>
+</html>
